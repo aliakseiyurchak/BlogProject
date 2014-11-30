@@ -64,5 +64,18 @@ namespace BlogProject.Controllers
             return View("List", viewModel);
         }
 
+        public ViewResult Post(int year, int month, string title)
+        {
+            var post = _blogRepository.Post(year, month, title);
+
+            if (post == null)
+                throw new HttpException(404, "Post not found");
+
+            if (post.Published == false && User.Identity.IsAuthenticated == false)
+                throw new HttpException(401, "The post is not published");
+
+            return View(post);
+        }
+
     }
 }
