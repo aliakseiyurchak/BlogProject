@@ -1,0 +1,16 @@
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\BlogProject.Core.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\BlogProject.Core.pdb
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\FluentNHibernate.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Iesi.Collections.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\NHibernate.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.Web.Common.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\FluentNHibernate.xml
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Iesi.Collections.xml
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\NHibernate.xml
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.pdb
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.xml
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.Web.Common.pdb
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.Web.Common.xml
+C:\university_project\BlogSolution\BlogProject.Core\obj\Debug\BlogProject.Core.dll
+C:\university_project\BlogSolution\BlogProject.Core\obj\Debug\BlogProject.Core.pdb
