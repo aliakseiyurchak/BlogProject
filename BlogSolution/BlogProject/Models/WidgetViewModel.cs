@@ -17,5 +17,6 @@ namespace BlogProject.Models
 
         public IList<Category> Categories { get; private set; }
         public IList<Tag> Tags { get; private set; }
+        public IList<Post> LatestPosts { get; private set; }
     }
 }
