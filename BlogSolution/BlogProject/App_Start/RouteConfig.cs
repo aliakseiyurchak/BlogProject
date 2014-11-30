@@ -14,6 +14,12 @@ namespace BlogProject
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "Category",
+                "Category/{category}",
+                new { controller = "Blog", action = "Category" }
+            );
+
+            routes.MapRoute(
                 "Default",
                 "{controller}/{action}/{id}",
                 new { controller = "Blog", action = "Posts", id = UrlParameter.Optional }
