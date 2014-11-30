@@ -155,6 +155,11 @@ namespace BlogProject.Core
         {
             return _session.Query<Tag>().OrderBy(p => p.Name).ToList();
         }
+
+        public IList<Post> LatestPosts()
+        {
+            return _session.Query<Post>().OrderBy(p => p.Title).ToList();
+        }
     }
 
 }

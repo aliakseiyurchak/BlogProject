@@ -13,6 +13,7 @@ namespace BlogProject.Models
         {
             Categories = blogRepository.Categories();
             Tags = blogRepository.Tags();
+            LatestPosts = blogRepository.LatestPosts();
         }
 
         public IList<Category> Categories { get; private set; }

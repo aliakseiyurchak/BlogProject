@@ -28,5 +28,7 @@ namespace BlogProject.Core
         IList<Category> Categories();
 
         IList<Tag> Tags();
+
+        IList<Post> LatestPosts();
     }
 }
