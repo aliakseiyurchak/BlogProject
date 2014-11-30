@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BlogProject.Core;
+using Ninject;
+using Ninject.Web.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,15 +13,22 @@ namespace BlogProject
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801
-    public class MvcApplication : System.Web.HttpApplication
+    public class MvcApplication : NinjectHttpApplication
     {
-        protected void Application_Start()
+        protected override IKernel CreateKernel()
         {
-            AreaRegistration.RegisterAllAreas();
+            var kernel = new StandardKernel();
 
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            kernel.Load(new RepositoryModule());
+            kernel.Bind<IBlogRepository>().To<BlogRepository>();
+
+            return kernel;
+        }
+
+        protected override void OnApplicationStarted()
+        {
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            base.OnApplicationStarted();
         }
     }
 }
