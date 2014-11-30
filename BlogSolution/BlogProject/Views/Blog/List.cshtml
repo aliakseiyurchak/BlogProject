@@ -1,7 +1,19 @@
 ﻿@model BlogProject.Models.ListViewModel
 
-@{
-    ViewBag.Title = "List";
-}
-
-<h2>List</h2>
+<div id="content">
+ 
+  <h1>@ViewBag.Title</h1>
+ 
+  @if (Model.Posts.Count > 0)
+  {
+    foreach (var post in Model.Posts)
+    {
+      @Html.Partial("_PostTemplate", post)
+    }
+  }
+  else
+  {
+    <p>No posts found!</p>
+  }
+ 
+</div>

@@ -1,12 +1,11 @@
 ﻿@model BlogProject.Core.Objects.Post
-
 <div class="post">
   <div class="post-meta">
     <div class="row">
  
       <!--Heading-->
       <div class="post-title">
-        <h2>@Html.PostLink(Model)</h2>
+        <h2>@BlogProject.ActionLinkExtensions.PostLink(Html,Model)</h2>
       </div>
  
     </div>
@@ -15,7 +14,7 @@
  
       <!--Category-->
       <div class="post-category">
-        <span>Category: </span>@Html.CategoryLink(Model.Category)
+        <span>Category: </span>@BlogProject.ActionLinkExtensions.CategoryLink(Html, Model.Category)
       </div>
  
       <!--Tags-->
@@ -25,7 +24,7 @@
  
       <!--Posted date-->
       <div class="posted-date">
-        @Model.PostedOn.ToConfigLocalTime()
+        @Model.PostedOn.ToLocalTime()
       </div>
  
     </div>
