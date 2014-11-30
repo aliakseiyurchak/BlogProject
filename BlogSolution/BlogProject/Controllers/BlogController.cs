@@ -20,7 +20,7 @@ namespace BlogProject.Controllers
         public ViewResult Posts(int p = 1)
         {
             var viewModel = new ListViewModel(_blogRepository, p);
-            ViewBag.Title = "Список последних статей";
+            ViewBag.Title = "Latest posts";
             return View("List", viewModel);
         }
         //
