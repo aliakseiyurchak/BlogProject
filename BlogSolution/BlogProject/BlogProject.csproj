@@ -129,6 +129,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\themes\simple\images\arrow.png" />
+    <Content Include="Content\themes\simple\images\back.png" />
+    <Content Include="Content\themes\simple\images\bullet.png" />
+    <Content Include="Content\themes\simple\images\graphic.png" />
+    <Content Include="Content\themes\simple\images\link.png" />
+    <Content Include="Content\themes\simple\images\logo.jpg" />
+    <Content Include="Content\themes\simple\images\logo.png" />
+    <Content Include="Content\themes\simple\images\search.png" />
+    <Content Include="Content\themes\simple\images\tabs.png" />
+    <Content Include="Content\themes\simple\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -141,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\themes\simple\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -151,6 +160,15 @@
       <Project>{b6df7117-4a05-4223-909d-b5b6159157ac}</Project>
       <Name>BlogProject.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Blog\List.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
