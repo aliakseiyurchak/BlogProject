@@ -76,5 +76,37 @@ namespace BlogProject.Core
             return _session.Query<Category>()
                         .FirstOrDefault(t => t.UrlSlug.Equals(categorySlug));
         }
+
+        public IList<Post> PostsForTag(string tagSlug, int pageNo, int pageSize)
+        {
+            var posts = _session.Query<Post>()
+                              .Where(p => p.Published && p.Tags.Any(t => t.UrlSlug.Equals(tagSlug)))
+                              .OrderByDescending(p => p.PostedOn)
+                              .Skip(pageNo * pageSize)
+                              .Take(pageSize)
+                              .Fetch(p => p.Category)
+                              .ToList();
+
+            var postIds = posts.Select(p => p.Id).ToList();
+
+            return _session.Query<Post>()
+                          .Where(p => postIds.Contains(p.Id))
+                          .OrderByDescending(p => p.PostedOn)
+                          .FetchMany(p => p.Tags)
+                          .ToList();
+        }
+
+        public int TotalPostsForTag(string tagSlug)
+        {
+            return _session.Query<Post>()
+                        .Where(p => p.Published && p.Tags.Any(t => t.UrlSlug.Equals(tagSlug)))
+                        .Count();
+        }
+
+        public Tag Tag(string tagSlug)
+        {
+            return _session.Query<Tag>()
+                        .FirstOrDefault(t => t.UrlSlug.Equals(tagSlug));
+        }
     }
 }
