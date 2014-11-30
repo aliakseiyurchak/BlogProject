@@ -14,6 +14,12 @@ namespace BlogProject
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "Tag",
+                 "Tag/{tag}",
+                new { controller = "Blog", action = "Tag" }
+            );
+
+            routes.MapRoute(
                 "Category",
                 "Category/{category}",
                 new { controller = "Blog", action = "Category" }
