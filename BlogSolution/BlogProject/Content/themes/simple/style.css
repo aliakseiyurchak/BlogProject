@@ -5,7 +5,7 @@ body
   padding: 0px;
   margin: 0px;
   font-size: .78em;
-  background: #090708;
+  background: #31698a;
   color: #5D5D5D;}
 
 p
@@ -13,8 +13,9 @@ p
   padding: 0px 0px 16px 0px;
   line-height: 1.7em;}
 
-h1, h2, h3, h4, h5, h6 
-{ font: normal 179% 'century gothic', arial, sans-serif;
+/*заголовки бокового виджета*/
+h1, h2, h3, h4, h5, h6
+{ font: normal 300% 'century gothic', arial, sans-serif;
   color: #43423F;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;}
@@ -39,6 +40,7 @@ h5, h6
 h6
 { color: #362C20;}
 
+/*Названия тегов, категорий, статей*/
 a, a:hover
 { border-bottom: 1px dotted;
   color: #635B53;
@@ -104,7 +106,7 @@ ol li
 { padding-bottom: 40px;}
 
 #header
-{ background: transparent url(images/logo.jpg) no-repeat;}
+{ background: #31698a;}
 
 #logo
 { width: 860px;
@@ -116,6 +118,7 @@ ol li
   top: 47px;
   left: 0;}
 
+/*Название сайта*/
 #logo h1, #logo h2
 { font: normal 300% 'century gothic', arial, sans-serif;
   border-bottom: 0;
@@ -127,17 +130,18 @@ ol li
   color: #FFF;
   text-decoration: none;
   border: 0;}
-
+/*Второе слово названия сайта*/
 #logo_text h1 a .logo_colour
-{ color: #FC9C04;}
+{ color: #FFF;}
 
 #logo_text a:hover .logo_colour
 { color: #FFF;}
 
+/*название под заголовком сайта*/
 #logo_text h2
 { font-size: 120%;
   padding: 4px 0 0 0;
-  color: #fff;}
+  color: #FFF;}
 
 #menubar
 { width: 870px;
@@ -244,7 +248,7 @@ ul#menu li a:hover
   padding: 20px 0 5px 0;
   text-align: center; 
   background: transparent;
-  color: #EEF3CD;
+  color: #FFF;
   text-transform: uppercase;
   letter-spacing: 0.1em;}
 
