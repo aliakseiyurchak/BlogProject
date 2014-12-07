@@ -32,10 +32,16 @@ namespace BlogProject
             );
 
             routes.MapRoute(
+                 "Logout",
+                "Logout",
+                 new { controller = "Admin", action = "Logout" }
+            );
+
+            routes.MapRoute(
                  "Login",
                  "Login",
                 new { controller = "Admin", action = "Login" }
-);
+            );
 
             routes.MapRoute(
                 "Default",
