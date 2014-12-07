@@ -1,27 +1,33 @@
-﻿using System;
+﻿using BlogProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace BlogProject.Controllers
 {
-    [Authorize]
+
     public class AdminController : Controller
     {
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login(LoginModel model, string returnUrl)
         {
-            if (User.Identity.IsAuthenticated)
+            if (ModelState.IsValid)
             {
-                if (!String.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
-                    return Redirect(returnUrl);
+                if (FormsAuthentication.Authenticate(model.UserName, model.Password))
+                {
+                    FormsAuthentication.SetAuthCookie(model.UserName, false);
 
-                return RedirectToAction("Manage");
+                    if (!String.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                        return Redirect(returnUrl);
+
+                    return RedirectToAction("Manage");
+                }
+
+                ModelState.AddModelError("", "The user name or password provided is incorrect.");
             }
-
-            ViewBag.ReturnUrl = returnUrl;
-
             return View();
         }
 
