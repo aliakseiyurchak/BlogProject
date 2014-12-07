@@ -3,7 +3,6 @@ C:\university_project\BlogSolution\BlogProject\bin\BlogProject.dll
 C:\university_project\BlogSolution\BlogProject\bin\BlogProject.pdb
 C:\university_project\BlogSolution\BlogProject\bin\BlogProject.Core.dll
 C:\university_project\BlogSolution\BlogProject\bin\Microsoft.Web.Infrastructure.dll
-C:\university_project\BlogSolution\BlogProject\bin\Newtonsoft.Json.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Net.Http.Formatting.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Web.Helpers.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Web.Http.dll

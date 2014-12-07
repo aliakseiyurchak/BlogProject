@@ -32,6 +32,12 @@ namespace BlogProject
             );
 
             routes.MapRoute(
+                 "Login",
+                 "Login",
+                new { controller = "Admin", action = "Login" }
+);
+
+            routes.MapRoute(
                 "Default",
                 "{controller}/{action}/{id}",
                 new { controller = "Blog", action = "Posts", id = UrlParameter.Optional }
