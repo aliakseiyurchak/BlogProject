@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -16,7 +15,7 @@ namespace BlogProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (Membership.ValidateUser(model.UserName, model.Password))
+                if (FormsAuthentication.Authenticate(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);
 
