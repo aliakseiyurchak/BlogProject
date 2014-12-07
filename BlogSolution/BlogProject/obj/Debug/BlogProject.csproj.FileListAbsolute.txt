@@ -1,7 +1,6 @@
 C:\university_project\BlogSolution\BlogProject\bin\BlogProject.dll
 C:\university_project\BlogSolution\BlogProject\bin\BlogProject.pdb
 C:\university_project\BlogSolution\BlogProject\bin\BlogProject.Core.dll
-C:\university_project\BlogSolution\BlogProject\bin\Microsoft.Web.Infrastructure.dll
 C:\university_project\BlogSolution\BlogProject\bin\Ninject.dll
 C:\university_project\BlogSolution\BlogProject\bin\Ninject.Web.Common.dll
 C:\university_project\BlogSolution\BlogProject\bin\Ninject.Web.Mvc.dll
@@ -14,7 +13,6 @@ C:\university_project\BlogSolution\BlogProject\bin\System.Web.Razor.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Web.WebPages.Deployment.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Web.WebPages.dll
 C:\university_project\BlogSolution\BlogProject\bin\System.Web.WebPages.Razor.dll
-C:\university_project\BlogSolution\BlogProject\bin\WebActivator.dll
 C:\university_project\BlogSolution\BlogProject\bin\FluentNHibernate.dll
 C:\university_project\BlogSolution\BlogProject\bin\NHibernate.dll
 C:\university_project\BlogSolution\BlogProject\bin\Iesi.Collections.dll
@@ -40,3 +38,5 @@ C:\university_project\BlogSolution\BlogProject\bin\Iesi.Collections.xml
 C:\university_project\BlogSolution\BlogProject\obj\Debug\BlogProject.csprojResolveAssemblyReference.cache
 C:\university_project\BlogSolution\BlogProject\obj\Debug\BlogProject.dll
 C:\university_project\BlogSolution\BlogProject\obj\Debug\BlogProject.pdb
+C:\university_project\BlogSolution\BlogProject\bin\Newtonsoft.Json.xml
+C:\university_project\BlogSolution\BlogProject\bin\Newtonsoft.Json.dll

@@ -10,7 +10,7 @@ namespace BlogProject.Core
     public interface IBlogRepository
     {
         IList<Post> Posts(int pageNo, int pageSize);
-        int TotalPosts();
+        int TotalPosts(bool checkIsPublished = true);
 
         IList<Post> PostsForCategory(string categorySlug, int pageNo, int pageSize);
         int TotalPostsForCategory(string categorySlug);
@@ -30,5 +30,7 @@ namespace BlogProject.Core
         IList<Tag> Tags();
 
         IList<Post> LatestPosts();
+
+        IList<Post> Posts(int pageNo, int pageSize, string sortColumn, bool sortByAscending);
     }
 }
