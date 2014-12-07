@@ -1,8 +1,8 @@
 ﻿$(function () {
 
-    var BlogProject = {};
+    var Blog = {};
 
-    BlogProject.GridManager = {
+    Blog.GridManager = {
 
         // function to create grid to manage posts
         postsGrid: function (gridName, pagerName) {
@@ -147,12 +147,14 @@
         }
     };
 
+
+
     $("#tabs").tabs({
         show: function (event, ui) {
 
             if (!ui.tab.isLoaded) {
 
-                var gdMgr = BlogProject.GridManager,
+                var gdMgr = JustBlog.GridManager,
                     fn, gridName, pagerName;
 
                 switch (ui.index) {

@@ -1,4 +1,5 @@
 ﻿using BlogProject.Core;
+using BlogProject.Providers;
 using Ninject;
 using Ninject.Web.Common;
 using System;
@@ -21,6 +22,7 @@ namespace BlogProject
 
             kernel.Load(new RepositoryModule());
             kernel.Bind<IBlogRepository>().To<BlogRepository>();
+            kernel.Bind<IAuthProvider>().To<AuthProvider>();
 
             return kernel;
         }

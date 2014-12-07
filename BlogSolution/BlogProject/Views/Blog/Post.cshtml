@@ -23,7 +23,7 @@
         <div class="post-tags">
           <span>Tags:</span> @Helpers.Tags(Html, Model.Tags)
         </div>
-         
+
         <div class="posted-date">
           @Model.PostedOn.ToLocalTime()
         </div>
@@ -34,6 +34,5 @@
     <div class="post-body">
      @Html.Raw(Model.Description)
     </div>
-     
   </div>
 </div>

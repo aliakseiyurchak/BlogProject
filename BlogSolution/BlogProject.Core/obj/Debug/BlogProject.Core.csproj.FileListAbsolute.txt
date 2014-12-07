@@ -14,3 +14,6 @@ C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.Web.Common
 C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Ninject.Web.Common.xml
 C:\university_project\BlogSolution\BlogProject.Core\obj\Debug\BlogProject.Core.dll
 C:\university_project\BlogSolution\BlogProject.Core\obj\Debug\BlogProject.Core.pdb
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Newtonsoft.Json.dll
+C:\university_project\BlogSolution\BlogProject.Core\bin\Debug\Newtonsoft.Json.xml
+C:\university_project\BlogSolution\BlogProject.Core\obj\Debug\BlogProject.Core.csprojResolveAssemblyReference.cache
