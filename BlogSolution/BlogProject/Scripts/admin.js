@@ -1,1 +1,3 @@
-﻿
+﻿$(function () {
+    $("#tabs").tabs();
+});
