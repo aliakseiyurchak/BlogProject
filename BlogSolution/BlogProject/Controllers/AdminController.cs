@@ -16,7 +16,7 @@ namespace BlogProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (FormsAuthentication.Authenticate(model.UserName, model.Password))
+                if (Membership.ValidateUser(model.UserName, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.UserName, false);
 
@@ -29,6 +29,13 @@ namespace BlogProject.Controllers
                 ModelState.AddModelError("", "The user name or password provided is incorrect.");
             }
             return View();
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+
+            return RedirectToAction("Login", "Admin");
         }
 
         public ActionResult Index()
